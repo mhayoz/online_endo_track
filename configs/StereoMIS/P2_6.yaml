@@ -1,0 +1,19 @@
+inherit_from: configs/base.yaml
+device: cuda
+dataset: 'stereoMIS'
+cam:
+  H: 512
+  W: 640
+  fx: 559.88883
+  fy: 559.88883
+  cx: 329.73555374
+  cy: 257.43183327
+  stereo_baseline: 2329.1433173348532
+
+data:
+  input_folder: StereoMIS/P2_6
+  output: output/stereoMIS/P2_6_explicit
+  start: 0 
+  stop: 200
+  step: 1
+

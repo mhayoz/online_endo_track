@@ -1,0 +1,63 @@
+device: "cuda:0"
+scale: 10.0
+
+cam_widefield:
+  znear: 0.01
+  zfar: 3.0
+  crop_edge: 0
+  point_src_light_model: False
+  H: 1024
+  W: 1280
+  fx: 600
+  fy: 600
+  cx: 640
+  cy: 512
+
+
+cam:
+  znear: 0.01
+  zfar: 3.0
+  crop_edge: 0
+  point_src_light_model: True
+
+training:
+  spherical_harmonics: True
+  optical_flow_init: True
+  grad_weighing: True
+  add_points: True
+  iters: 100
+  iters_first: 1000
+  # weights
+  w_depth: 10.0
+  w_color: 5
+  w_def:
+    rigid: 4.0
+    iso: 10.0
+    rot: 1.0
+    nvisible: 1.0
+
+  # learning rates
+  position_lr_init: 0.00016
+  deformation_lr_init: 0.00016
+  grid_lr_init: 0.0016
+  feature_lr: 0.0025
+  opacity_lr: 0.00
+  scaling_lr: 0.005
+  rotation_lr: 0.001
+  percent_dense: 0.1
+
+  # Gaussians densify and pruning
+
+  densify_from_iter: 100
+  densify_grad_threshold: 0.002
+  densification_interval: 100
+  opacity_threshold: 0.8
+  pruning_from_iter: 200
+  pruning_interval: 100
+
+model:
+  visit_alpha: 0.1
+  visit_offset: 100
+  deform_network: # Deform network
+    model: sparse
+    subsample: 64

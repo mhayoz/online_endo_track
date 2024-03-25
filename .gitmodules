@@ -1,0 +1,6 @@
+[submodule "src/submodules/gaussian-rasterization"]
+	path = src/submodules/gaussian-rasterization
+	url = https://github.com/mhayoz/gaussian-rasterization.git
+[submodule "src/submodules/simple-knn"]
+	path = src/submodules/simple-knn
+	url = https://gitlab.inria.fr/bkerbl/simple-knn.git
