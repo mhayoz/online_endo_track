@@ -4,7 +4,10 @@ Online 3D reconstruction and dense tracking in endoscopic videos
 
 [Paper](https://arxiv.org/abs/todo)
 
-[![Watch the video](docs/P3_1_tracking.mp4)](docs/P3_1_tracking.mp4)
+|                         Tracking                         |                 3D Semantic Segmentation                 |
+|:--------------------------------------------------------:|:--------------------------------------------------------:|
+| <img src="docs/P3_1_tracking.gif" style="zoom: 100%;" /> | <img src="docs/P3_1_semantic.gif" style="zoom: 100%;" /> |
+
 </h1>
 
 <br>
