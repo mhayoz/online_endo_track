@@ -2,7 +2,7 @@
 
 Online 3D reconstruction and dense tracking in endoscopic videos
 
-[Paper](https://arxiv.org/abs/todo)
+[Paper](https://arxiv.org/abs/2409.06037)
 
 |                         Tracking                         |                 3D Semantic Segmentation                 |
 |:--------------------------------------------------------:|:--------------------------------------------------------:|
