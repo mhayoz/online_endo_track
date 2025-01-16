@@ -22,7 +22,7 @@ pip install -e src/submodules/simple-knn
 ```
 
 ## Run
-Download the data from [StereoMIS Tracking](10.5281/zenodo.10867949) and unpack it in the repository base folder.
+Download the data from [StereoMIS Tracking]([10.5281/zenodo.10867949]) and unpack it in the repository base folder.
 Once the data is downloaded, you can run our method with:
 ```bash
 python run.py configs/StereoMIS/P3_1.yaml --log P3_1 --visualize
